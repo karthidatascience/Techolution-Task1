@@ -1,0 +1,20 @@
+Headings*Sub-Headings*Unix/macOS code*Windows code
+Create and Use Virtual Environments*Create a new virtual environment*python3 -m venv .venv*py -m venv .venv
+Create and Use Virtual Environments*Activate a virtual environment*source .venv/bin/activate*.venv\Scripts\activate
+Create and Use Virtual Environments*Activate a virtual environment*which python*where python
+Create and Use Virtual Environments*Activate a virtual environment*.venv/bin/python*.venv\Scripts\python
+Prepare pip**python3 -m pip install --upgrade pip | python3 -m pip --version | pip 23.3.1 from .../.venv/lib/python3.9/site-packages (python 3.9)*py -m pip install --upgrade pip|py -m pip --version|pip 23.3.1 from .venv\lib\site-packages (Python 3.9.4)
+Install packages using pip*Install a package*python3 -m pip install requests*py -m pip install requests
+Install packages using pip*Install a specific package version*python3 -m pip install 'requests==2.18.4'*"py -m pip install ""requests==2.18.4"""
+Install packages using pip*Install a specific package version*python3 -m pip install 'requests>=2.0.0,<3.0.0'*"py -m pip install ""requests>=2.0.0,<3.0.0"""
+Install packages using pip*Install a specific package version*python3 -m pip install --pre requests*py -m pip install --pre requests
+Install packages using pip*Install extras*python3 -m pip install 'requests[security]'*"py -m pip install ""requests[security]"""
+Install packages using pip*Install a package from source*cd google-auth | python3 -m pip install .*cd google-auth|py -m pip install .
+Install packages using pip*Install a package from source*python3 -m pip install --editable .*py -m pip install --editable .
+Install packages using pip*Install from local archives*python3 -m pip install requests-2.18.4.tar.gz*py -m pip install requests-2.18.4.tar.gz
+Install packages using pip*Install from local archives*python3 -m pip install --no-index --find-links=/local/dir/ requests*py -m pip install --no-index --find-links=/local/dir/ requests
+Install packages using pip*Install from other package indexes*python3 -m pip install --index-url http://index.example.com/simple/ SomeProject*py -m pip install --index-url http://index.example.com/simple/ SomeProject
+Install packages using pip*Install from other package indexes*python3 -m pip install --extra-index-url http://index.example.com/simple/ SomeProject*py -m pip install --extra-index-url http://index.example.com/simple/ SomeProject
+Upgrading packages**python3 -m pip install --upgrade requests*py -m pip install --upgrade requests
+Using a requirements file**python3 -m pip install -r requirements.txt*py -m pip install -r requirements.txt
+Freezing dependencies**python3 -m pip freeze*py -m pip freeze
